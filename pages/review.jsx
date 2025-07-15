@@ -7,18 +7,18 @@ export default function Home() {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
   return (
-    <div className="min-h-screen bg-gray-50 py-16 px-4">
+    <div className="md:min-h-screen bg-gray-50 md:py-16 py-4 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Main Heading */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-[#0D34BF] mb-4">
+        <div className="text-center md:mb-16">
+          <h1 className="text-2xl md:text-5xl font-extrabold text-[#0D34BF] mb-4">
             DON'T JUST TAKE OUR<br />
             WORD FOR IT
           </h1>
         </div>
 
         {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-6 gap-4 md:mb-16 mb-4">
           {/* Testimonial 1 - Musale */}
           <div className="bg-white rounded-3xl p-6 shadow-lg">
             <div className="flex items-center space-x-3 mb-4">
@@ -137,7 +137,7 @@ export default function Home() {
 
         {/* Brand Logos Section */}
         <div className="text-center md:pt-24">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-gray-800 mb-12">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-gray-800 md:mb-12 mb-4">
             IN THE <span className="text-[#0D34BF]">SPOTLIGHT</span>
           </h2>
 

@@ -31,10 +31,10 @@ export default function HowItWorks() {
   return (
     <div>
       {/* Main How It Works Section - Sticky */}
-      <section className="min-h-screen bg-gray-50 py-20 relative overflow-hidden sticky top-0">
+      <section className="md:min-h-screen bg-gray-50 md:py-20 py-4 relative overflow-hidden sticky top-0">
         {/* Title */}
-        <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold">
+        <div className="text-center md:mb-20 mb-4">
+          <h2 className="text-2xl md:text-5xl lg:text-6xl font-bold">
             <span className="text-gray-800">HOW </span>
             <span className="text-gray-800">HardwareLo </span>
             <span className="text-[#0D34BF] italic">WORKS?</span>
@@ -79,7 +79,7 @@ export default function HowItWorks() {
                     <div className="bg-[#0D34BF] text-white px-4 py-2 rounded-full inline-block text-sm font-bold mb-4">
                       STEP 3
                     </div>
-                    <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+                    <h3 className="text-lg md:text-3xl font-bold text-gray-800 mb-4">
                       Over 90% of the Products
                     </h3>
                     <p className="text-gray-600 text-base md:text-lg leading-relaxed">
@@ -115,7 +115,7 @@ export default function HowItWorks() {
                     <div className="bg-[#0D34BF] text-white px-4 py-2 rounded-full inline-block text-sm font-bold mb-4">
                       STEP 2
                     </div>
-                    <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+                    <h3 className="text-lg md:text-3xl font-bold text-gray-800 mb-4">
                       Poy COD or select your
                     </h3>
                     <p className="text-gray-600 text-base md:text-lg leading-relaxed">
@@ -151,7 +151,7 @@ export default function HowItWorks() {
                     <div className="bg-[#0D34BF] text-white px-4 py-2 rounded-full inline-block text-sm font-bold mb-4">
                       STEP 1
                     </div>
-                    <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+                    <h3 className="text-lg md:text-3xl font-bold text-gray-800 mb-4">
                       Select Product from 30+
                     </h3>
                     <p className="text-gray-600 text-base md:text-lg leading-relaxed">

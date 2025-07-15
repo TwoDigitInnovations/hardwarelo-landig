@@ -51,6 +51,7 @@ export default function Home() {
   const heroHeight = typeof window !== 'undefined' ? window.innerHeight : 800
   const phoneTransition = Math.min(scrollY / heroHeight, 1)
 
+
   return (
     <>
       <Navbar />
@@ -74,31 +75,31 @@ export default function Home() {
       )}
 
       {/* Hero Section */}
-      <section className="bg-gray-50 min-h-screen  pt-16 relative overflow-hidden">
+      <section className="bg-gray-50 md:min-h-screen  pt-16 relative overflow-hidden">
         {/* Background Decorations */}
         <StarDecoration className="top-20 left-10 text-black md:block hidden" size="w-8 h-8" />
         <StarDecoration className="top-40 right-20 text-pink-400 md:block hidden" size="w-6 h-6" />
         <StarDecoration className="bottom-20 left-20 text-pink-300 md:block hidden" size="w-10 h-10" />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:py-20">
           <div className="text-center">
             <div className="flex justify-center mb-8">
               <StarDecoration className="text-pink-500 md:block hidden" size="w-12 h-12" />
             </div>
 
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8">
+            <h1 className="text-2xl md:text-6xl lg:text-7xl font-bold md:mb-8 mb-4">
               <span className="text-gray-800">INDIA&apos;S FIRST</span>
               <span className="text-[#0D34BF] italic"> QUICK</span>
               <br />
               <span className="text-gray-800"> COMMERCE APP FOR CONSTRUCTION MATERIAL</span>
             </h1>
 
-            <p className="text-gray-600 text-lg md:text-xl mb-12 max-w-2xl mx-auto">
+            <p className="text-gray-600 text-lg md:text-xl md:mb-12 mb-4 max-w-2xl mx-auto">
               Build with Confidence ,Build HardwareLo
             </p>
 
             {/* Download Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-2">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:mb-2 mb-4">
               <a
                 onClick={() => window.open('https://play.google.com/store/apps/details?id=com.hardwarelo.app', '_black')}
                 className="inline-flex items-center bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors"
@@ -154,13 +155,13 @@ export default function Home() {
 
               {/* Mobile Layout - Show only cleaner1 */}
               <div className="md:hidden flex justify-center items-end">
-                <div className="w-[280px] h-[350px] relative z-20">
+                <div className="md:w-[280px] w-full md:h-[350px] relative z-20">
                   <Image
                     src="/cleaner1.svg"
                     alt="Professional cleaner service illustration"
                     width={280}
                     height={500}
-                    className="w-full h-[500px] object-contain"
+                    className="w-full md:h-[500px] object-contain"
                     priority
                   />
                 </div>
@@ -171,11 +172,11 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section data-section="services" className="min-h-screen py-20 relative overflow-hidden z-10" style={{ backgroundColor: '#0D34BF' }}>
+      <section id='services' data-section="services" className="md:min-h-screen md:py-20 py-4 relative overflow-hidden z-10" style={{ backgroundColor: '#0D34BF' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <p className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-8">30+ Categeries</p>
-            <p className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-8">50k + Products</p>
+          <div className="text-center md:mb-20">
+            <p className="text-2xl md:text-6xl lg:text-7xl font-bold text-white md:mb-8 mb-4">30+ Categeries</p>
+            <p className="text-2xl md:text-6xl lg:text-7xl font-bold text-white md:mb-8 mb-4">50k + Products</p>
             {/* <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-8">
               ONE BOOKING, <span className="text-[#FF2E6D] italic">MANY</span>
               <br />
@@ -184,7 +185,7 @@ export default function Home() {
           </div>
 
           {/* Horizontal Scrolling Service Cards - Centered */}
-          <div className="overflow-hidden relative z-10 flex items-center justify-center min-h-[400px]">
+          <div className="overflow-hidden relative z-10 flex items-center justify-center md:min-h-[400px]">
             <div className="flex animate-scroll-left gap-6 items-center">
               {/* First set of services */}
               <ServiceCard
@@ -258,10 +259,18 @@ export default function Home() {
         </div>
       </section>
 
-      <HowItWorks />
-      <SnabbitHomepage />
+      <div id='how-it-works' className='w-full'>
+        <HowItWorks />
+      </div>
+
+      <div id='why-us' className='w-full overflow-hidden'>
+        <SnabbitHomepage />
+      </div>
+
       <Reviews />
-      <FAQSECTION />
+      <div id='faqs' className='w-full'>
+        <FAQSECTION />
+      </div>
 
       {/* Fixed Floating Buttons - Only show from footer onwards */}
       {/* Download Button - Left Side */}
@@ -314,8 +323,8 @@ export default function Home() {
       </div>
 
       {/* Write to Us Button - Right Side */}
-      <div className="fixed bottom-8 right-8 z-40">
-        <button className="bg-white text-[#5D0F36] px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all flex items-center gap-2 font-medium">
+      <div className="fixed md:bottom-8 bottom-4 right-8 z-40" onClick={() => window.open(`https://api.whatsapp.com/send/?phone=+918638597393&text=Hi,&app_absent=0`, '_black')}>
+        <button className="bg-white text-[#0D34BF] px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all flex items-center gap-2 font-medium">
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
           </svg>

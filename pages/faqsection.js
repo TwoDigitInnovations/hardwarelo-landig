@@ -54,12 +54,12 @@ export default function FAQSection() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-16 px-4">
+    <div className="md:min-h-screen bg-gray-50 md:py-16 py-4 px-4">
       <div className="max-w-6xl mx-auto">
         {/* FAQ Section - Exactly like screenshot */}
-        <div className="bg-gray-100 rounded-3xl p-8 md:p-12">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-extrabold text-[#0D34BF] mb-4">
+        <div className="bg-gray-100 rounded-3xl p-4 md:p-12">
+          <div className="text-center md:mb-12">
+            <h2 className="text-2xl md:text-5xl font-extrabold text-[#0D34BF] mb-4">
               FAQs
             </h2>
           </div>
@@ -69,7 +69,7 @@ export default function FAQSection() {
               <div key={faq.id} className="bg-white rounded-2xl shadow-sm">
                 <button
                   onClick={() => toggleFaq(faq.id)}
-                  className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors rounded-2xl"
+                  className="w-full md:px-8 px-4 md:py-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors rounded-2xl"
                 >
                   <span className="text-lg md:text-xl font-medium text-gray-800 pr-4">
                     {faq.question}
@@ -80,8 +80,8 @@ export default function FAQSection() {
                 </button>
 
                 {openFaq === faq.id && (
-                  <div className="px-8 pb-6">
-                    <div className="pt-2 border-t border-gray-100">
+                  <div className="md:px-8 px-4 md:pb-6 pb-4">
+                    <div className="md:pt-2 border-t border-gray-100">
                       <p className="text-gray-600 leading-relaxed mt-4 text-base md:text-lg">
                         {faq.answer}
                       </p>
