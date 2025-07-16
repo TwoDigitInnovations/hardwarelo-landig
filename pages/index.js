@@ -267,7 +267,8 @@ export default function Home() {
         <SnabbitHomepage />
       </div>
 
-      <Reviews />
+      {/* <Reviews /> */}
+
       <div id='faqs' className='w-full'>
         <FAQSECTION />
       </div>
