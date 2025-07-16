@@ -2,8 +2,8 @@ export default function ServiceCard({ title, image, className = "" }) {
   return (
     <div className={`service-card bg-white rounded-2xl p-4 shadow-lg hover:shadow-xl ${className}`}>
       <div className="w-full h-32 bg-gray-100 rounded-lg mb-3 overflow-hidden">
-        <img 
-          src={image} 
+        <img
+          src={image}
           alt={title}
           className="w-full h-full object-cover"
           onError={(e) => {
@@ -11,7 +11,7 @@ export default function ServiceCard({ title, image, className = "" }) {
           }}
         />
       </div>
-      <h3 className="font-semibold text-gray-800 text-sm">{title}</h3>
+      <h3 className="font-semibold text-gray-800 text-sm h-10 overflow-hidden">{title}</h3>
     </div>
   )
 }

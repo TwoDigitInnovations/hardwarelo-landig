@@ -4,7 +4,6 @@ export default function Footer() {
   return (
     <div className="bg-white md:pt-10 pt-4">
       <footer className="bg-gradient-to-br bg-white from-[#0D34BF] via-[#0D34BF] to-[#0D34BF] relative overflow-hidden rounded-t-[3rem] ">
-        {/* Decorative Stars */}
         <div className="absolute top-8 left-8 md:block hidden">
           <div className="w-3 h-3 bg-white rotate-45 transform"></div>
         </div>
@@ -19,25 +18,17 @@ export default function Footer() {
         </div>
 
         <div className="max-w-7xl mx-auto md:px-8 px-4 md:pt-16 pt-4 md:pb-16 pb-20 text-center">
-          {/* Main Heading */}
           <div className="md:mb-8">
-            <h2 className="text-2xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-              INDIA&apos;S FIRST
-            </h2>
+            <h2 className="text-2xl md:text-5xl lg:text-6xl font-bold text-white mb-4">INDIA&apos;S FIRST</h2>
             <h2 className="text-2xl md:text-5xl lg:text-6xl font-bold md:mb-6 mb-4">
               <span className="text-white italic">QUICK</span>
               <span className="text-white"> COMMERCE APP FOR CONSTRUCTION MATERIAL</span>
             </h2>
           </div>
 
-          {/* Subtitle */}
-          <p className="text-white text-lg md:text-xl md:mb-12 mb-4 max-w-md mx-auto">
-            Build with Confidence ,Build HardwareLo
-          </p>
+          <p className="text-white text-lg md:text-xl md:mb-12 mb-4 max-w-md mx-auto">Build with Confidence ,Build HardwareLo</p>
 
-          {/* App Download Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center md:mb-16 mb-4">
-            {/* Google Play Button */}
             <div className="bg-black rounded-lg px-6 py-3 flex items-center space-x-3 hover:bg-gray-800 transition-colors cursor-pointer md:w-auto w-[200px]" onClick={() => window.open('https://play.google.com/store/apps/details?id=com.hardwarelo.app', '_black')}>
               <div className="text-white">
                 <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
@@ -50,7 +41,6 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* App Store Button */}
             <div className="bg-black rounded-lg px-6 py-3 flex items-center space-x-3 hover:bg-gray-800 transition-colors cursor-pointer md:w-auto w-[200px]" onClick={() => window.open('https://apps.apple.com/us/app/hardwarelo/id6747817935', '_black')}>
               <div className="text-white">
                 <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
@@ -64,30 +54,21 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Bottom Section */}
-          <div className="flex flex-col md:flex-row justify-between items-center md:pt-8 pt-4 border-t border-white">
-            {/* Copyright */}
-            <div className="flex md:items-center items-start text-white text-sm mb-4 md:mb-0">
+          <div className="flex flex-col md:flex-row justify-center items-center md:pt-8 pt-4 border-t border-white md:gap-6 gap-4">
+            <div className="flex md:items-center items-start text-white text-sm">
               <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center md:mr-3 mr-2">
-                <span className="text-purple-900 text-xs font-bold">©</span>
+                <span className="text-[#0D34BF] text-xs font-bold">©</span>
               </div>
               <span>2025 MaestroEdge Solutions Pvt. Ltd. All rights reserved.</span>
             </div>
 
-            {/* Policy Links */}
             <div className="flex flex-wrap gap-6 text-white text-sm">
-              <a href="#" className="hover:text-pink-300 transition-colors" onClick={() => window.open('https://hardwarelo.com/terms', '_black')}>Terms of Use</a>
-              <a href="#" className="hover:text-pink-300 transition-colors" onClick={() => window.open('https://hardwarelo.com/privacy-policy', '_black')}>Privacy Policy</a>
-              {/* <a href="#" className="hover:text-pink-300 transition-colors">Equal Opportunity Policy</a> */}
-              {/* <a href="#" className="hover:text-pink-300 transition-colors">Refund & Cancellation Policy</a> */}
+              <a className="transition-colors" onClick={() => window.open('https://hardwarelo.com/terms', '_black')}>Terms of Use</a>
+              {/* hover:text-pink-300 */}
+              <a className="transition-colors" onClick={() => window.open('https://hardwarelo.com/privacy-policy', '_black')}>Privacy Policy</a>
             </div>
           </div>
         </div>
-
-        {/* <div className="hidden md:block h-[60%]">
-          <img src="/ss.svg" className="md:h-[400px] h-[120px] opacity-25" alt="Background decoration" />
-        </div> */}
-
       </footer>
     </div>
   );

@@ -27,26 +27,17 @@ export default function Navbar() {
     <nav className="fixed w-full top-0 z-50 py-4">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-center">
-          {/* Desktop Navigation - White Pill Box */}
           <div className="hidden md:flex">
             <div className="bg-white rounded-full px-8 py-3 shadow-lg">
               <div className="flex items-center space-x-8">
-                <a onClick={() => goToTop("services")} className="text-gray-600 hover:text-pink-500 font-medium transition-colors">
-                  Services
-                </a>
-                <a onClick={() => goToTop("how-it-works")} className="text-gray-600 hover:text-pink-500 font-medium transition-colors">
-                  How it works
-                </a>
+                <a onClick={() => goToTop("services")} className="text-gray-600 hover:text-[#0D34BF] font-medium transition-colors">Services</a>
+                <a onClick={() => goToTop("how-it-works")} className="text-gray-600 hover:text-[#0D34BF] font-medium transition-colors">How it works</a>
 
-                {/* Logo in center */}
-                <div className="text-2xl font-bold text-[#0D34BF] px-4">
-                  HardwareLo
-                </div>
+                <div className="text-2xl font-bold text-[#0D34BF] px-4">HardwareLo</div>
 
-                <a onClick={() => goToTop("why-us")} className="text-gray-600 hover:text-pink-500 font-medium transition-colors">
-                  Why us?
+                <a onClick={() => goToTop("why-us")} className="text-gray-600 hover:text-[#0D34BF] font-medium transition-colors">Why us?
                 </a>
-                <a onClick={() => goToTop1("faqs")} className="text-gray-600 hover:text-pink-500 font-medium transition-colors">
+                <a onClick={() => goToTop1("faqs")} className="text-gray-600 hover:text-[#0D34BF] font-medium transition-colors">
                   FAQs
                 </a>
               </div>
