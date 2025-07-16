@@ -1,4 +1,5 @@
 'use client';
+import moment from 'moment';
 
 export default function Footer() {
   return (
@@ -59,7 +60,7 @@ export default function Footer() {
               <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center md:mr-3 mr-2">
                 <span className="text-[#0D34BF] text-xs font-bold">©</span>
               </div>
-              <span>2025 MaestroEdge Solutions Pvt. Ltd. All rights reserved.</span>
+              <span>{moment().format('YYYY')} HardwareLo Pvt. Ltd. All rights reserved.</span>
             </div>
 
             <div className="flex flex-wrap gap-6 text-white text-sm">
