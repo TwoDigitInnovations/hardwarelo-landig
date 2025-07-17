@@ -105,7 +105,7 @@ export default function Home() {
               <span className="text-gray-800"> COMMERCE APP FOR CONSTRUCTION MATERIAL</span>
             </h1>
 
-            <p className="text-gray-600 text-lg md:text-xl md:mb-12 mb-4 max-w-2xl mx-auto">Build with Confidence ,Build HardwareLo</p>
+            <p className="text-gray-600 text-lg md:text-xl md:mb-12 mb-4 max-w-2xl mx-auto">Build with Confidence, Build HardwareLo.</p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:mb-2 mb-4">
               <a onClick={() => window.open('https://play.google.com/store/apps/details?id=com.hardwarelo.app', '_black')}
@@ -150,7 +150,7 @@ export default function Home() {
       <section id='services' data-section="services" className="md:min-h-screen md:py-20 py-4 relative overflow-hidden z-10" style={{ backgroundColor: '#0D34BF' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center md:mb-20">
-            <p className="text-2xl md:text-6xl lg:text-7xl font-bold text-white md:mb-8 mb-4">30+ Categeries</p>
+            <p className="text-2xl md:text-6xl lg:text-7xl font-bold text-white md:mb-8 mb-4">30+ Categories</p>
             <p className="text-2xl md:text-6xl lg:text-7xl font-bold text-white md:mb-8 mb-4">50k + Products</p>
           </div>
 
@@ -169,6 +169,8 @@ export default function Home() {
       <div id='why-us' className='w-full overflow-hidden'>
         <SnabbitHomepage />
       </div>
+
+      <Reviews />
 
       <div id='faqs' className='w-full'>
         <FAQSECTION />

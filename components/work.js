@@ -116,10 +116,10 @@ export default function HowItWorks() {
                       STEP 2
                     </div>
                     <h3 className="text-lg md:text-3xl font-bold text-gray-800 mb-4">
-                      Poy COD or select your
+                      Pay COD or select your
                     </h3>
                     <p className="text-gray-600 text-base md:text-lg leading-relaxed">
-                      Prefered Poyment method
+                      Prefered Payment method
                     </p>
                   </div>
                 </div>
@@ -155,7 +155,7 @@ export default function HowItWorks() {
                       Select Product from 30+
                     </h3>
                     <p className="text-gray-600 text-base md:text-lg leading-relaxed">
-                      Categeries & 50k + Products
+                      Categories & 50k + Products
                     </p>
                   </div>
                 </div>

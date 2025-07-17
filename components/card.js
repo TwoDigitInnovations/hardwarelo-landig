@@ -64,7 +64,7 @@ export default function SnabbitHomepage() {
               <div className="relative md:mb-6 mb-2 h-40">
                 <img src="/c2.svg" alt="Professionally Trained" className="absolute inset-0 w-full h-full object-contain pointer-events-none" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 md:mb-2">Fostest Delivery</h3>
+              <h3 className="text-xl font-bold text-gray-900 md:mb-2">Fastest Delivery</h3>
             </div>
           </div>
 
@@ -83,7 +83,7 @@ export default function SnabbitHomepage() {
               <div className="relative md:mb-6 mb-2 h-40">
                 <img src="/c4.svg" alt="Quality Service" className="absolute inset-0 w-full h-full object-contain pointer-events-none" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900">Eosh Poyment method</h3>
+              <h3 className="text-xl font-bold text-gray-900">Each Payment method</h3>
             </div>
 
             <div className={`text-center bg-white rounded-2xl shadow-lg p-6 transition-all duration-1000 ease-out ${isAnimated
@@ -96,7 +96,7 @@ export default function SnabbitHomepage() {
               <div className="relative md:mb-6 mb-2 h-40">
                 <img src="/c6.svg" alt="Trusted by Families" className="absolute inset-0 w-full h-full object-contain pointer-events-none" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900">Lorge Product ln vertory</h3>
+              <h3 className="text-xl font-bold text-gray-900">Large Product Inventory</h3>
             </div>
           </div>
         </div>
