@@ -92,7 +92,7 @@ export default function Home() {
         <StarDecoration className="top-40 right-20 text-pink-400 md:block hidden" size="w-6 h-6" />
         <StarDecoration className="bottom-20 left-20 text-pink-300 md:block hidden" size="w-10 h-10" />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:pt-20 md:pb-20 pb-4">
           <div className="text-center">
             <div className="flex justify-center mb-8">
               <StarDecoration className="text-pink-500 md:block hidden" size="w-12 h-12" />
@@ -124,13 +124,13 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="relative z-30">
+            {/* <div className="relative z-30">
               <div className="hidden md:flex flex-wrap justify-center items-end gap-8">
                 <div className="w-[390px] h-[400px] relative z-20">
                   <Image src="/cleaner1.svg" alt="Professional cleaner service illustration" width={390} height={650} className="w-full h-[650px] object-contain" priority />
                 </div>
 
-                {/* <div className="w-64 h-40 flex items-center justify-center"></div> */}
+                <div className="w-64 h-40 flex items-center justify-center"></div>
 
                 <div className="w-[390px] h-[400px] relative z-20">
                   <Image src="/cleaner2.svg" alt="Professional cleaner service illustration" width={390} height={550} className="w-full h-[550px] object-contain" priority />
@@ -142,6 +142,12 @@ export default function Home() {
                   <Image src="/cleaner1.svg" alt="Professional cleaner service illustration" width={280} height={500} className="w-full md:h-[500px] object-contain" priority />
                 </div>
               </div>
+            </div> */}
+
+            <div className='grid md:grid-cols-3 grid-cols-1 w-full md:gap-10 gap-5 md:mt-10 mt-5'>
+              <img className='w-full md:h-[600px] object-cover' src='/leftImg.jpg' />
+              <img className='w-full md:h-[600px] object-cover' src='/centreImg.jpg' />
+              <img className='w-full md:h-[600px] object-cover' src='/rightImg.jpg' />
             </div>
           </div>
         </div>
