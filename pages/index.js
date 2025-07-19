@@ -144,11 +144,15 @@ export default function Home() {
               </div>
             </div> */}
 
-            <div className='grid md:grid-cols-3 grid-cols-1 w-full md:gap-10 gap-5 md:mt-10 mt-5'>
-              <img className='w-full md:h-[600px] object-cover' src='/leftImg.jpg' />
-              <img className='w-full md:h-[600px] object-cover' src='/centreImg.jpg' />
-              <img className='w-full md:h-[600px] object-cover' src='/rightImg.jpg' />
+            <div className='md:grid md:grid-cols-2 grid-cols-1 w-full gap-5 mt-10 hidden'>
+              <img className='w-full md:h-[800px] object-contain' src='/leftImg.jpg' />
+              <img className='w-full md:h-[800px] object-contain' src='/rightImg.jpg' />
             </div>
+
+            <div className='grid md:grid-cols-2 grid-cols-1 w-full gap-5 mt-5 md:hidden'>
+              <img className='w-full object-contain' src='/centreImg.jpg' />
+            </div>
+
           </div>
         </div>
       </section>
