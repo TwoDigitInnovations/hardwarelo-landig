@@ -67,7 +67,7 @@ export default function HowItWorks() {
                   <div className="flex-shrink-0 order-2 md:order-1">
                     <div className="w-48 h-60 md:w-64 md:h-80 relative rounded-3xl overflow-hidden">
                       <img
-                        src='/card3.png'
+                        src='/stepImg-3.png'
                         alt="Snabbit App Interface"
                         className="w-full h-full object-contain rounded-3xl"
                       />
@@ -103,7 +103,7 @@ export default function HowItWorks() {
                   <div className="flex-shrink-0 order-2 md:order-1">
                     <div className="w-48 h-60 md:w-64 md:h-80 relative rounded-3xl overflow-hidden">
                       <img
-                        src='/card1.png'
+                        src='/stepImg-2.png'
                         alt="Snabbit App Interface"
                         className="w-full h-full object-contain rounded-3xl"
                       />
@@ -139,7 +139,7 @@ export default function HowItWorks() {
                   <div className="flex-shrink-0 order-2 md:order-1">
                     <div className="w-48 h-60 md:w-64 md:h-80 relative rounded-3xl overflow-hidden">
                       <img
-                        src='/card2.png'
+                        src='/stepImg-1.png'
                         alt="Snabbit App Interface"
                         className="w-full h-full object-contain rounded-3xl"
                       />
