@@ -82,7 +82,7 @@ export default function SnabbitHomepage() {
                 transitionDelay: isAnimated ? '0.5s' : '0s'
               }}>
               {/* <div className="relative md:mb-0 mb-2 h-40"> */}
-              <img src="/cardImg1.webp" alt="Quality Service" className="relative inset-0 w-full h-full object-contain pointer-events-none" />
+              <img src="/cardImg4.webp" alt="Quality Service" className="relative inset-0 w-full h-full object-contain pointer-events-none" />
               {/* </div> */}
               {/* <h3 className="text-xl font-bold text-gray-900">Each Payment method</h3> */}
             </div>
@@ -95,7 +95,7 @@ export default function SnabbitHomepage() {
                 transitionDelay: isAnimated ? '0.6s' : '0s'
               }} >
               {/* <div className="relative md:mb-0 mb-2 h-40"> */}
-              <img src="/cardImg2.webp" alt="Trusted by Families" className="relative inset-0 w-full h-full object-contain pointer-events-none" />
+              <img src="/cardImg5.webp" alt="Trusted by Families" className="relative inset-0 w-full h-full object-contain pointer-events-none" />
               {/* </div> */}
               {/* <h3 className="text-xl font-bold text-gray-900">Large Product Inventory</h3> */}
             </div>
@@ -108,7 +108,7 @@ export default function SnabbitHomepage() {
                 transitionDelay: isAnimated ? '0.1s' : '0s'
               }}>
               {/* <div className="relative md:mb-0 mb-2 h-40"> */}
-              <img src="/cardImg3.webp" alt="Background Verified Experts" className="relative inset-0 w-full h-full object-contain pointer-events-none" />
+              <img src="/cardImg2.webp" alt="Background Verified Experts" className="relative inset-0 w-full h-full object-contain pointer-events-none" />
               {/* </div> */}
               {/* <h3 className="text-xl font-bold text-gray-900 md:mb-2">Best Prices</h3> */}
             </div>
@@ -121,20 +121,20 @@ export default function SnabbitHomepage() {
                 transitionDelay: isAnimated ? '0.2s' : '0s'
               }}>
               {/* <div className="relative md:mb-0 mb-2 h-40"> */}
-              <img src="/cardImg4.webp" alt="Professionally Trained" className="relative inset-0 w-full h-full object-contain pointer-events-none" />
+              <img src="/cardImg3.webp" alt="Professionally Trained" className="relative inset-0 w-full h-full object-contain pointer-events-none" />
               {/* </div> */}
               {/* <h3 className="text-xl font-bold text-gray-900 md:mb-2">Fastest Delivery</h3> */}
             </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-4 md:gap-8 gap-4 md:hidden">
-            <img src="/cardImg1.webp" alt="Quality Service" className="w-full h-full object-contain" />
+            <img src="/cardImg4.webp" alt="Quality Service" className="w-full h-full object-contain" />
 
-            <img src="/cardImg2.webp" alt="Trusted by Families" className="w-full h-full object-contain" />
+            <img src="/cardImg5.webp" alt="Trusted by Families" className="w-full h-full object-contain" />
 
-            <img src="/cardImg3.webp" alt="Background Verified Experts" className="w-full h-full object-contain" />
+            <img src="/cardImg2.webp" alt="Background Verified Experts" className="w-full h-full object-contain" />
 
-            <img src="/cardImg4.webp" alt="Professionally Trained" className="w-full h-full object-contain" />
+            <img src="/cardImg3.webp" alt="Professionally Trained" className="w-full h-full object-contain" />
           </div>
         </div>
       </div>

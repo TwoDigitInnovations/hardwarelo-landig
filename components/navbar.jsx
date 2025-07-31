@@ -47,12 +47,12 @@ export default function Navbar() {
           {/* Mobile Navigation */}
           <div className="md:hidden w-full">
             <div className="bg-white rounded-full px-6 py-3 shadow-lg flex items-center justify-between">
-              <div className="text-xl font-bold text-pink-500">
+              <div className="text-xl font-bold text-[#0D34BF]">
                 HardwareLo
               </div>
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="text-gray-600 hover:text-pink-500"
+                className="text-gray-600 hover:text-[#0D34BF]"
               >
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
