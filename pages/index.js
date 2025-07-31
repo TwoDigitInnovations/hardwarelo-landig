@@ -87,14 +87,21 @@ export default function Home() {
         <PhoneMockup />
       </div>)} */}
 
-      <section className="bg-gray-50 md:min-h-screen  pt-16 relative overflow-hidden">
-        <StarDecoration className="top-20 left-10 text-black md:block hidden" size="w-8 h-8" />
-        <StarDecoration className="top-40 right-20 text-pink-400 md:block hidden" size="w-6 h-6" />
-        <StarDecoration className="bottom-20 left-20 text-pink-300 md:block hidden" size="w-10 h-10" />
+      <section className="bg-gray-50 md:min-h-screen  md:pt-16 pt-[68px] relative overflow-hidden">
+        <div className='absolute top-16 left-0'>
+          <StarDecoration className="top-20 left-10 text-black md:block hidden" size="w-8 h-8" />
+          <StarDecoration className="top-40 right-20 text-pink-400 md:block hidden" size="w-6 h-6" />
+          <StarDecoration className="bottom-20 left-20 text-pink-300 md:block hidden" size="w-10 h-10" />
+        </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:pt-20 md:pb-20 pb-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:pt-20 pt-4 md:pb-20 pb-4">
           <div className="text-center">
-            <div className="flex justify-center mb-8">
+
+            <div className='flex justify-center items-center md:mb-8 mb-4'>
+              <img className='md:w-[300px] object-contain' src='/logo.png' />
+            </div>
+
+            <div className="flex justify-center md:mb-8">
               <StarDecoration className="text-pink-500 md:block hidden" size="w-12 h-12" />
             </div>
 
@@ -105,7 +112,7 @@ export default function Home() {
               <span className="text-gray-800"> COMMERCE APP FOR CONSTRUCTION MATERIAL</span>
             </h1>
 
-            <p className="text-gray-600 text-lg md:text-xl md:mb-12 mb-4 max-w-2xl mx-auto">Build with Confidence, Build HardwareLo.</p>
+            <p className="text-gray-600 text-lg md:text-xl md:mb-12 mb-4 max-w-2xl mx-auto">Build with Confidence, Build with HardwareLo.</p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:mb-2 mb-4">
               <a onClick={() => window.open('https://play.google.com/store/apps/details?id=com.hardwarelo.app', '_black')}

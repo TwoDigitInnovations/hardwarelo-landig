@@ -4,7 +4,7 @@ import moment from 'moment';
 export default function Footer() {
   return (
     <div className="bg-white md:pt-10 pt-4">
-      <footer className="bg-gradient-to-br bg-white from-[#0D34BF] via-[#0D34BF] to-[#0D34BF] relative overflow-hidden rounded-t-[3rem] ">
+      <footer className="bg-gradient-to-br bg-white from-[#0D34BF] via-[#0D34BF] to-[#0D34BF] relative overflow-hidden rounded-t-[3rem]">
         <div className="absolute top-8 left-8 md:block hidden">
           <div className="w-3 h-3 bg-white rotate-45 transform"></div>
         </div>
@@ -19,6 +19,10 @@ export default function Footer() {
         </div>
 
         <div className="max-w-7xl mx-auto md:px-8 px-4 md:pt-16 pt-4 md:pb-16 pb-20 text-center">
+          <div className='flex justify-center items-center md:mb-8 mb-4'>
+            <img className='md:w-[300px] object-contain' src='/logo-1.png' />
+          </div>
+
           <div className="md:mb-8">
             <h2 className="text-2xl md:text-5xl lg:text-6xl font-bold text-white mb-4">INDIA&apos;S FIRST</h2>
             <h2 className="text-2xl md:text-5xl lg:text-6xl font-bold md:mb-6 mb-4">
@@ -27,7 +31,7 @@ export default function Footer() {
             </h2>
           </div>
 
-          <p className="text-white text-lg md:text-xl md:mb-12 mb-4 max-w-md mx-auto">Build with Confidence ,Build HardwareLo</p>
+          <p className="text-white text-lg md:text-xl md:mb-12 mb-4 max-w-md mx-auto">Build with Confidence, Build with HardwareLo.</p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center md:mb-16 mb-4">
             <div className="bg-black rounded-lg px-6 py-3 flex items-center space-x-3 hover:bg-gray-800 transition-colors cursor-pointer md:w-auto w-[200px]" onClick={() => window.open('https://play.google.com/store/apps/details?id=com.hardwarelo.app', '_black')}>

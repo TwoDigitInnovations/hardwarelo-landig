@@ -7,17 +7,20 @@ export default function Home() {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
   return (
-    <div className="md:min-h-screen bg-gray-50 md:py-16 py-4 px-4">
+    <div className="bg-gray-50 md:py-16 py-4 px-4">
+      {/* md:min-h-screen */}
       <div className="max-w-7xl mx-auto">
-        <div className="text-center md:mb-16">
-          <h1 className="text-2xl md:text-5xl font-extrabold text-[#0D34BF] mb-4">
+        <div className="text-center">
+          {/* md:mb-16 */}
+          <h1 className="text-2xl md:text-5xl font-extrabold text-[#0D34BF]">
+            {/* mb-4 */}
             Don't Just Listen to
             <br />
             Us Try it
           </h1>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-6 gap-4 md:mb-16 mb-4">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-6 gap-4 md:mb-16 mb-4">
           <div className="bg-white rounded-3xl p-6 shadow-lg">
             <div className="flex items-center space-x-3 mb-4">
               <div className="w-12 h-12 bg-gradient-to-br from-pink-400 to-purple-400 rounded-full"></div>
@@ -126,7 +129,7 @@ export default function Home() {
               My regular house help doesn't clean fans or bathrooms, so I tried Snabbit. It's super convenient, and they pay attention to details my regular help doesn't.
             </p>
           </div>
-        </div>
+        </div> */}
 
         {/* <div className="text-center md:pt-24">
           <h2 className="text-2xl md:text-3xl font-extrabold text-gray-800 md:mb-12 mb-4">
