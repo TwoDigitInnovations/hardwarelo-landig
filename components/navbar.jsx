@@ -1,24 +1,36 @@
 import { useState } from 'react'
+import { useRouter } from "next/router";
 
 export default function Navbar() {
+  const router = useRouter();
+  console.log(router?.pathname);
+
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const goToTop = (id) => {
+    if (router?.pathname !== '/') {
+      router.push('/')
+      return
+    }
     setIsMenuOpen(false);
     const element = document.getElementById(id);
 
     window.scrollTo({
-      top: element.offsetTop - 72,
+      top: element?.offsetTop - 72,
       behavior: "smooth"
     });
   };
 
   const goToTop1 = (id) => {
+    if (router?.pathname !== '/') {
+      router.push('/')
+      return
+    }
     setIsMenuOpen(false);
     const element = document.getElementById(id);
 
     window.scrollTo({
-      top: element.offsetTop - 10,
+      top: element?.offsetTop - 10,
       behavior: "smooth"
     });
   };
@@ -33,7 +45,7 @@ export default function Navbar() {
                 <a onClick={() => goToTop("services")} className="text-gray-600 hover:text-[#0D34BF] font-medium transition-colors">Services</a>
                 <a onClick={() => goToTop("how-it-works")} className="text-gray-600 hover:text-[#0D34BF] font-medium transition-colors">How it works</a>
 
-                <div className="text-2xl font-bold text-[#0D34BF] px-4">HardwareLo</div>
+                <div className="text-2xl font-bold text-[#0D34BF] px-4" onClick={() => router.push("/")}>HardwareLo</div>
 
                 <a onClick={() => goToTop("why-us")} className="text-gray-600 hover:text-[#0D34BF] font-medium transition-colors">Why us?
                 </a>
@@ -47,7 +59,7 @@ export default function Navbar() {
           {/* Mobile Navigation */}
           <div className="md:hidden w-full">
             <div className="bg-white rounded-full px-6 py-3 shadow-lg flex items-center justify-between">
-              <div className="text-xl font-bold text-[#0D34BF]">
+              <div className="text-xl font-bold text-[#0D34BF]" onClick={() => router.push("/")}>
                 HardwareLo
               </div>
               <button

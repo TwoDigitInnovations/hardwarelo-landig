@@ -87,7 +87,8 @@ export default function Home() {
         <PhoneMockup />
       </div>)} */}
 
-      <section className="bg-gray-50 md:min-h-screen  md:pt-16 pt-[68px] relative overflow-hidden">
+      <section className="bg-gray-50 md:min-h-screen  md:pt-[72px] pt-[68px] relative overflow-hidden">
+        {/* md:pt-16 */}
         <div className='absolute top-16 left-0'>
           <StarDecoration className="top-20 left-10 text-black md:block hidden" size="w-8 h-8" />
           <StarDecoration className="top-40 right-20 text-pink-400 md:block hidden" size="w-6 h-6" />

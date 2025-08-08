@@ -1,7 +1,10 @@
 'use client';
 import moment from 'moment';
+import { useRouter } from "next/router";
 
 export default function Footer() {
+  const router = useRouter();
+
   return (
     <div className="bg-white md:pt-10 pt-4">
       <footer className="bg-gradient-to-br bg-white from-[#0D34BF] via-[#0D34BF] to-[#0D34BF] relative overflow-hidden rounded-t-[3rem]">
@@ -59,6 +62,14 @@ export default function Footer() {
             </div>
           </div>
 
+          <div className='flex md:flex-row flex-col justify-center items-center gap-5 md:mb-5 mb-4'>
+            <p className='text-white text-base font-normal' onClick={() => router.push("/about-us")}>About us</p>
+            <p className='text-white text-base font-normal' onClick={() => router.push("/terms")}>Terms & conditions</p>
+            <p className='text-white text-base font-normal' onClick={() => router.push("/return-policy")}>Return policy</p>
+            <p className='text-white text-base font-normal' onClick={() => router.push("/support-policy")}>Support policy</p>
+            <p className='text-white text-base font-normal' onClick={() => router.push("/privacy-policy")}>Privacy policy</p>
+          </div>
+
           <div className="flex flex-col md:flex-row justify-center items-center md:pt-8 pt-4 border-t border-white md:gap-6 gap-4">
             <div className="flex md:items-center items-start text-white text-sm">
               <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center md:mr-3 mr-2">
@@ -67,11 +78,11 @@ export default function Footer() {
               <span>{moment().format('YYYY')} HardwareLo Pvt. Ltd. All rights reserved.</span>
             </div>
 
-            <div className="flex flex-wrap gap-6 text-white text-sm">
+            {/* <div className="flex flex-wrap gap-6 text-white text-sm">
               <a className="transition-colors" onClick={() => window.open('https://hardwarelo.com/terms', '_black')}>Terms of Use</a>
-              {/* hover:text-pink-300 */}
               <a className="transition-colors" onClick={() => window.open('https://hardwarelo.com/privacy-policy', '_black')}>Privacy Policy</a>
-            </div>
+            </div> */}
+            {/* hover:text-pink-300 */}
           </div>
         </div>
       </footer>
