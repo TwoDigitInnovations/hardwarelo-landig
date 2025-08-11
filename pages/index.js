@@ -99,7 +99,7 @@ export default function Home() {
           <div className="text-center">
 
             <div className='flex justify-center items-center md:mb-8 mb-4'>
-              <img className='md:w-[300px] object-contain' src='/logo.png' />
+              <img className='md:w-[200px] object-contain' src='/logo-3.jpg' />
             </div>
 
             <div className="flex justify-center md:mb-8">

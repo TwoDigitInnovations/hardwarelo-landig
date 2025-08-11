@@ -23,7 +23,7 @@ export default function Footer() {
 
         <div className="max-w-7xl mx-auto md:px-8 px-4 md:pt-16 pt-4 md:pb-16 pb-20 text-center">
           <div className='flex justify-center items-center md:mb-8 mb-4'>
-            <img className='md:w-[300px] object-contain' src='/logo-1.png' />
+            <img className='md:w-[200px] object-contain' src='/logo-2.jpg' />
           </div>
 
           <div className="md:mb-8">
